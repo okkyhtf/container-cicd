@@ -20,7 +20,7 @@ RUN install -o root -g root -m 0755 oc /usr/local/bin/oc
 RUN install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl
 RUN rm -f openshift-client-linux.tar.gz oc kubectl README.md
 
-# Prepare regular user dedicated for cicd
-RUN adduser cicd -u 1001
-USER 1001
-WORKDIR /home/cicd
+# # Prepare regular user dedicated for cicd
+# RUN adduser cicd -u 1001
+# USER 1001
+# WORKDIR /home/cicd
