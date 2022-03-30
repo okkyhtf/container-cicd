@@ -5,7 +5,7 @@ LABEL maintainer="Okky Hendriansyah <okky.htf@gmail.com>"
 ENV OC_VERSION=4.10.6
 
 # Install basic dependencies
-RUN dnf install -y curl git
+#RUN dnf install -y curl git
 
 # Install additional container tools
 RUN dnf install -y buildah skopeo podman
